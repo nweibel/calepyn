@@ -1,1 +1,1 @@
-Sitemap: https://nweibel.github.io/calepyn/sitemap.xml
+Sitemap: https://nweibel.github.io/calepyns/sitemap.xml
