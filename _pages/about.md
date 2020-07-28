@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About Me
+title: À propos
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Les notebooks présentés sur ce site sont réalisés pour l'enseignement, la formation ou par simple curiosité. Ils sont partagés selon les termes de la [Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr).
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Ces pages sont réalisées avec **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]: une plateforme de blog qui supporte nativement les notebooks Jupyter et d’autres formats.
