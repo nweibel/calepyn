@@ -171,7 +171,6 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Jeu-de-la-machine-:">Jeu de la machine : </a></li>
 <li class="toc-entry toc-h3"><a href="#Jeu-de-l'adversaire:">Jeu de l&#39;adversaire: </a></li>
-<li class="toc-entry toc-h3"><a href="#Constante">Constante </a></li>
 <li class="toc-entry toc-h3"><a href="#Déroulement-du-jeu">Déroulement du jeu </a></li>
 </ul>
 </li>
@@ -363,7 +362,8 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">jouer_machine</span><span class="p">(</span><span class="n">nb_allumettes</span><span class="p">):</span>
     <span class="sd">'''- prend en paramètre le nombre d'allumettes restant à jouer</span>
 <span class="sd">    - renvoie le nombre d'allumettes prises lors du coup joué par la machine</span>
-<span class="sd">    et un booléen indiquant si ce coup a conduit à la perte de la partie pour la machine'''</span>
+<span class="sd">    et un booléen indiquant si ce coup a conduit à la perte de la partie </span>
+<span class="sd">    pour la machine'''</span>
    
     <span class="n">perdu</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">if</span> <span class="n">coups_possibles</span><span class="p">[</span><span class="n">nb_allumettes</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="p">[]:</span>
@@ -406,7 +406,8 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">jouer_adversaire</span><span class="p">(</span><span class="n">nb_allumettes</span><span class="p">):</span>
     <span class="sd">'''- prend en paramètre le nombre d'allumettes restant à jouer</span>
 <span class="sd">    - renvoie le nombre d'allumettes prises lors du coup joué par l'adversaire</span>
-<span class="sd">    et un booléen indiquant si ce coup a conduit à la perte de la partie pour la machine'''</span>
+<span class="sd">    et un booléen indiquant si ce coup a conduit à la perte de la partie </span>
+<span class="sd">    pour la machine'''</span>
     
     <span class="n">perdu</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="k">if</span> <span class="n">nb_allumettes</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
@@ -415,32 +416,6 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
     <span class="k">else</span> <span class="p">:</span>
         <span class="n">coup_joue</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">coup_joue</span><span class="p">,</span> <span class="n">perdu</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Constante">
-<a class="anchor" href="#Constante" aria-hidden="true"><span class="octicon octicon-link"></span></a>Constante<a class="anchor-link" href="#Constante"> </a>
-</h3>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NB_ALLUMETTES</span> <span class="o">=</span> <span class="mi">8</span>
 </pre></div>
 
     </div>
@@ -466,16 +441,34 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">NB_ALLUMETTES</span> <span class="o">=</span> <span class="mi">8</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">jouer_partie</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="sd">''' simule le déroulement de n parties successives, en faisant toujours commencer l'adversaire de la machine</span>
+    <span class="sd">''' simule le déroulement de n parties successives, en faisant toujours </span>
+<span class="sd">    commencer l'adversaire de la machine</span>
 <span class="sd">    et renvoie la liste des numéros des parties perdues'''</span>
     
     <span class="n">parties_perdues</span> <span class="o">=</span> <span class="p">[]</span>
     
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
         <span class="n">perdu</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># perdu prend la valeur True lorsque la machine perd la partie</span>
-        <span class="n">allumettes</span> <span class="o">=</span> <span class="p">[</span><span class="n">NB_ALLUMETTES</span><span class="p">]</span> <span class="c1"># contient les valeurs successives au cours d'une partie </span>
-        <span class="c1"># du nombre d'allumettes restantes </span>
+        <span class="n">allumettes</span> <span class="o">=</span> <span class="p">[</span><span class="n">NB_ALLUMETTES</span><span class="p">]</span> <span class="c1"># contient les valeurs successives au </span>
+        <span class="c1"># cours d'une partie du nombre d'allumettes restantes </span>
        
         <span class="k">while</span> <span class="ow">not</span> <span class="n">perdu</span> <span class="ow">and</span> <span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
             <span class="c1">#l'adversaire joue </span>
@@ -483,8 +476,9 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
             <span class="n">allumettes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">nb_allumettes</span><span class="p">)</span>
             
             <span class="k">if</span> <span class="n">perdu</span> <span class="p">:</span> 
-                <span class="c1">#le dernier coup de la machine a permis à l'adversaire de gagner </span>
-                <span class="c1"># on supprime le coup correspondant de la liste des coups possibles</span>
+                <span class="c1"># le dernier coup de la machine a permis à l'adversaire de </span>
+                <span class="c1"># gagner : on supprime le coup correspondant de la </span>
+                <span class="c1"># liste des coups possibles</span>
                 <span class="n">coups_possibles</span><span class="p">[</span><span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span> <span class="o">-</span> <span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
                
             <span class="k">else</span> <span class="p">:</span>
@@ -493,7 +487,7 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
                 <span class="n">allumettes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">nb_allumettes</span><span class="p">)</span>
                 
                 <span class="k">if</span> <span class="n">perdu</span> <span class="p">:</span>  
-                    <span class="c1">#le précédent coup de la machine a conduit à sa défaite </span>
+                    <span class="c1">#le précédent coup de la machine a conduit à sa défaite : </span>
                     <span class="c1"># on supprime le coup correspondant de la liste des coups possibles</span>
                     <span class="n">coups_possibles</span><span class="p">[</span><span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">-</span> <span class="n">allumettes</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
                     
@@ -501,6 +495,7 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
             <span class="n">parties_perdues</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
            
     <span class="k">return</span> <span class="p">(</span><span class="n">parties_perdues</span><span class="p">)</span>
+  
 </pre></div>
 
     </div>
@@ -590,10 +585,10 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
 
 
 
-<div id="ea712728-8351-4434-be40-7f6b7e5c24cd"></div>
+<div id="836b17a4-0e05-4cf5-b76d-d8c38b9cf2d6"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#ea712728-8351-4434-be40-7f6b7e5c24cd');
+var element = $('#836b17a4-0e05-4cf5-b76d-d8c38b9cf2d6');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
