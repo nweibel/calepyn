@@ -13,10 +13,11 @@
 <link rel="canonical" href="https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html" />
 <meta property="og:url" content="https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html" />
 <meta property="og:site_name" content="Calepyns" />
+<meta property="og:image" content="https://nweibel.github.io/calepyns/my_icons/allumettes.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-31T00:00:00-05:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Nathalie Weibel"},"description":"Quand une machine apprend à jouer contre son adversaire au fur et à mesure des parties jouées","@type":"BlogPosting","headline":"Le jeu de Nim par apprentissage","dateModified":"2020-07-31T00:00:00-05:00","datePublished":"2020-07-31T00:00:00-05:00","url":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Nathalie Weibel"},"description":"Quand une machine apprend à jouer contre son adversaire au fur et à mesure des parties jouées","@type":"BlogPosting","headline":"Le jeu de Nim par apprentissage","dateModified":"2020-07-31T00:00:00-05:00","datePublished":"2020-07-31T00:00:00-05:00","image":"https://nweibel.github.io/calepyns/my_icons/allumettes.png","url":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/calepyns/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nweibel.github.io/calepyns/feed.xml" title="Calepyns" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -35,10 +36,11 @@
 <link rel="canonical" href="https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html" />
 <meta property="og:url" content="https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html" />
 <meta property="og:site_name" content="Calepyns" />
+<meta property="og:image" content="https://nweibel.github.io/calepyns/my_icons/allumettes.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-31T00:00:00-05:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Nathalie Weibel"},"description":"Quand une machine apprend à jouer contre son adversaire au fur et à mesure des parties jouées","@type":"BlogPosting","headline":"Le jeu de Nim par apprentissage","dateModified":"2020-07-31T00:00:00-05:00","datePublished":"2020-07-31T00:00:00-05:00","url":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Nathalie Weibel"},"description":"Quand une machine apprend à jouer contre son adversaire au fur et à mesure des parties jouées","@type":"BlogPosting","headline":"Le jeu de Nim par apprentissage","dateModified":"2020-07-31T00:00:00-05:00","datePublished":"2020-07-31T00:00:00-05:00","image":"https://nweibel.github.io/calepyns/my_icons/allumettes.png","url":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://nweibel.github.io/calepyns/jupyter/jeu/2020/07/31/jeu_de_nim.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -348,6 +350,7 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Lorsqu'elle doit jouer, la machine choisit <em>au hasard</em> l'un des coups possibles pour le nombre d'allumettes restant.</p>
 <p>Si aucun coup n'est disponible, elle abandonne la partie qu'elle considère comme perdue.</p>
+<p>En fin de partie, si la machine a perdu, elle supprime de la liste des coups possibles le dernier coup réalisé.</p>
 
 </div>
 </div>
@@ -585,10 +588,10 @@ L'un des joueurs est un humain, l'autre joueur est "une machine". Celle-ci doit 
 
 
 
-<div id="836b17a4-0e05-4cf5-b76d-d8c38b9cf2d6"></div>
+<div id="73534530-25d2-4447-bb4a-c712307a4379"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#836b17a4-0e05-4cf5-b76d-d8c38b9cf2d6');
+var element = $('#73534530-25d2-4447-bb4a-c712307a4379');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
