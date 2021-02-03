@@ -179,16 +179,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Jeu-de-la-machine-:">Jeu de la machine : </a></li>
 <li class="toc-entry toc-h3"><a href="#Jeu-de-l'adversaire:">Jeu de l&#39;adversaire: </a></li>
 <li class="toc-entry toc-h3"><a href="#Déroulement-du-jeu">Déroulement du jeu </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#Exemples-de-situations-possibles-au-bout-d'une-partie">Exemples de situations possibles au bout d&#39;une partie </a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#allumettes-=-[8,-7,-4,-2,-1,-0]">allumettes = [8, 7, 4, 2, 1, 0] </a></li>
-<li class="toc-entry toc-h3"><a href="#allumettes-=-[8,-6,-5,-3,-2,-0]">allumettes = [8, 6, 5, 3, 2, 0] </a></li>
-<li class="toc-entry toc-h3"><a href="#allumettes-=-[8,-7,-5,-4,-1,-0]">allumettes = [8, 7, 5, 4, 1, 0] </a></li>
-<li class="toc-entry toc-h3"><a href="#allumettes-=-[8,-5,-2,-0]">allumettes = [8, 5, 2, 0] </a></li>
-<li class="toc-entry toc-h3"><a href="#allumettes-=-[8,-6,-3,-0]">allumettes = [8, 6, 3, 0] </a></li>
-<li class="toc-entry toc-h3"><a href="#allumettes-=-[8,-6,-5,-3,-0]">allumettes = [8, 6, 5, 3, 0] </a></li>
+<li class="toc-entry toc-h3"><a href="#Exemples-de-situations-possibles-au-bout-d'une-partie">Exemples de situations possibles au bout d&#39;une partie </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Exemples-de-situations-nécessitant-plus-d'une-partie">Exemples de situations nécessitant plus d&#39;une partie </a>
@@ -305,7 +296,7 @@ L'agorithme attendu peut-être "naïf" :
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Déroulement</strong>:</p>
+<p><strong>Déroulement</strong> :</p>
 <p>Commencer une partie en laissant l'humain jouer en premier. L'humain joue comme il veut...</p>
 <p>Lorsque c'est à la machine de jouer, elle :</p>
 <ul>
@@ -559,39 +550,41 @@ L'agorithme attendu peut-être "naïf" :
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exemples-de-situations-possibles-au-bout-d'une-partie">
+<h3 id="Exemples-de-situations-possibles-au-bout-d'une-partie">
 <a class="anchor" href="#Exemples-de-situations-possibles-au-bout-d'une-partie" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exemples de situations possibles au bout d'une partie<a class="anchor-link" href="#Exemples-de-situations-possibles-au-bout-d'une-partie"> </a>
-</h2>
-<h3 id="allumettes-=-[8,-7,-4,-2,-1,-0]">
-<a class="anchor" href="#allumettes-=-%5B8,-7,-4,-2,-1,-0%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>allumettes = [8, 7, 4, 2, 1, 0]<a class="anchor-link" href="#allumettes-=-%5B8,-7,-4,-2,-1,-0%5D"> </a>
 </h3>
-<p>on supprime le jeton 1 du gobelet 2<br>
+<ul>
+<li>
+<p><code>allumettes = [8, 7, 4, 2, 1, 0]</code><br>
+on supprime le jeton 1 du gobelet 2<br>
 <code>coups_possibles = [[1], [2], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>
-<h3 id="allumettes-=-[8,-6,-5,-3,-2,-0]">
-<a class="anchor" href="#allumettes-=-%5B8,-6,-5,-3,-2,-0%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>allumettes = [8, 6, 5, 3, 2, 0]<a class="anchor-link" href="#allumettes-=-%5B8,-6,-5,-3,-2,-0%5D"> </a>
-</h3>
-<p>on supprime le jeton 1 du gobelet 3<br>
+</li>
+<li>
+<p><code>allumettes = [8, 6, 5, 3, 2, 0]</code><br>
+on supprime le jeton 1 du gobelet 3<br>
 <code>coups_possibles = [[1], [1, 2], [2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>
-<h3 id="allumettes-=-[8,-7,-5,-4,-1,-0]">
-<a class="anchor" href="#allumettes-=-%5B8,-7,-5,-4,-1,-0%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>allumettes = [8, 7, 5, 4, 1, 0]<a class="anchor-link" href="#allumettes-=-%5B8,-7,-5,-4,-1,-0%5D"> </a>
-</h3>
-<p>on supprime le jeton 3 du gobelet 4<br>
+</li>
+<li>
+<p><code>allumettes = [8, 7, 5, 4, 1, 0]</code><br>
+on supprime le jeton 3 du gobelet 4<br>
 <code>coups_possibles = [[1], [1, 2], [1, 2, 3], [1, 2], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>
-<h3 id="allumettes-=-[8,-5,-2,-0]">
-<a class="anchor" href="#allumettes-=-%5B8,-5,-2,-0%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>allumettes = [8, 5, 2, 0]<a class="anchor-link" href="#allumettes-=-%5B8,-5,-2,-0%5D"> </a>
-</h3>
-<p>on supprime le jeton 3 du gobelet 5<br>
+</li>
+<li>
+<p><code>allumettes = [8, 5, 2, 0]</code><br>
+on supprime le jeton 3 du gobelet 5<br>
 <code>coups_possibles = [[1], [1, 2], [1, 2, 3], [1, 2, 3], [1, 2], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>
-<h3 id="allumettes-=-[8,-6,-3,-0]">
-<a class="anchor" href="#allumettes-=-%5B8,-6,-3,-0%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>allumettes = [8, 6, 3, 0]<a class="anchor-link" href="#allumettes-=-%5B8,-6,-3,-0%5D"> </a>
-</h3>
-<p>on supprime le jeton 3 du gobelet 6<br>
+</li>
+<li>
+<p><code>allumettes = [8, 6, 3, 0]</code><br>
+on supprime le jeton 3 du gobelet 6<br>
 <code>coups_possibles = [[1], [1, 2], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2], [1, 2, 3], [1, 2, 3]]</code></p>
-<h3 id="allumettes-=-[8,-6,-5,-3,-0]">
-<a class="anchor" href="#allumettes-=-%5B8,-6,-5,-3,-0%5D" aria-hidden="true"><span class="octicon octicon-link"></span></a>allumettes = [8, 6, 5, 3, 0]<a class="anchor-link" href="#allumettes-=-%5B8,-6,-5,-3,-0%5D"> </a>
-</h3>
-<p>la machine a gagné !</p>
-<p><code>coups_possibles = [[1], [1, 2], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>
+</li>
+<li>
+<p><code>allumettes = [8, 6, 5, 3, ]</code><br>
+la machine a gagné !
+<code>coups_possibles = [[1], [1, 2], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]]</code></p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -811,10 +804,10 @@ L'agorithme attendu peut-être "naïf" :
 
 
 
-<div id="a6ac2790-8435-4ffa-846a-9a98d77fa6fd"></div>
+<div id="34ea3edc-3294-4f98-83bc-e80b9eb5b56f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#a6ac2790-8435-4ffa-846a-9a98d77fa6fd');
+var element = $('#34ea3edc-3294-4f98-83bc-e80b9eb5b56f');
 /* Put everything inside the global mpl namespace */
 /* global mpl */
 window.mpl = {};
