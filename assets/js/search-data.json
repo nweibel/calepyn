@@ -4,9 +4,9 @@
         "post0": {
             "title": "Title",
             "content": "from mobilechelonian import Turtle . t = Turtle() t.speed(3) t.backward(100) for loop in range(5) : t.forward(200) t.right(144) . t = Turtle() t.speed(10) t.backward(100) for i in range(20) : t.forward(200) t.right(162) . t = Turtle() t.speed(10) t.backward(100) for i in range(10) : t.circle(30) t.right(36) .",
-            "url": "https://nweibel.github.io/calepyns/2021/04/29/trac%C3%A9s-turtle.html",
-            "relUrl": "/2021/04/29/trac%C3%A9s-turtle.html",
-            "date": " • Apr 29, 2021"
+            "url": "https://nweibel.github.io/calepyns/2021/05/19/trac%C3%A9s-turtle.html",
+            "relUrl": "/2021/05/19/trac%C3%A9s-turtle.html",
+            "date": " • May 19, 2021"
         }
         
     
